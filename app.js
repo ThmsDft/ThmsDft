@@ -45,7 +45,7 @@ setInterval(function () {
     buble.style.transform = `translate(${x}%, ${y}%)`
     buble.classList.toggle("levitation");
   });
-}, 2000);
+}, 3000);
 
 
 linesAnitmation(lines);
