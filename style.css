@@ -79,76 +79,79 @@ section.hero div.container div {
 }
 
 section.hero div.container div span {
+  scale: 0;
+  width: 0%;
   position: relative;
   left: -100%;
   display: block;
-  min-height: 17px;
+  height: 17px;
   border-radius: 34px;
   transition: all 0.6s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
 section.hero div.container div span.bounce {
   left: 0;
+  scale: 1;
 }
 
 section.hero div.container div:nth-child(1) span:nth-child(1) {
   background-color: #00bb8e;
-  min-width: 256px;
+  width: 256px;
 }
 
 section.hero div.container div:nth-child(1) span:nth-child(2) {
   background-color: #00ffc2;
-  min-width: 20px;
+  width: 20px;
 }
 
 section.hero div.container div:nth-child(2) span:nth-child(1) {
   background-color: #00e3ad;
-  min-width: 129px;
+  width: 129px;
 }
 
 section.hero div.container div:nth-child(2) span:nth-child(2) {
   background-color: #00bb8e;
-  min-width: 136px;
+  width: 136px;
 }
 
 section.hero div.container div:nth-child(3) span:nth-child(1) {
   background-color: #00ffc2;
-  min-width: 267px;
+  width: 267px;
 }
 
 section.hero div.container div:nth-child(3) span:nth-child(2) {
   background-color: #00e3ad;
-  min-width: 89px;
+  width: 89px;
 }
 
 section.hero div.container div:nth-child(4) span:nth-child(1) {
   background-color: #00edb4;
-  min-width: 24px;
+  width: 24px;
 }
 
 section.hero div.container div:nth-child(4) span:nth-child(2) {
   background-color: #00bb8e;
-  min-width: 261px;
+  width: 261px;
 }
 
 section.hero div.container div:nth-child(5) span:nth-child(1) {
   background-color: #00e3ad;
-  min-width: 118px;
+  width: 118px;
 }
 
 section.hero div.container div:nth-child(5) span:nth-child(2) {
   background-color: #00ffc2;
-  min-width: 200px;
+  width: 200px;
 }
 
 section.hero div.container div:nth-child(6) span:nth-child(1) {
   background-color: #00bb8e;
-  min-width: 205px;
+  width: 205px;
 }
 
 section.hero div.container div:nth-child(6) span:nth-child(2) {
   background-color: #00edb4;
-  min-width: 39px;
+  width: 39px;
 }
 
 section.hero img {
