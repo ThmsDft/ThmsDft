@@ -14,12 +14,20 @@
 
 const lines = document.querySelectorAll("section.hero div.container div span");
 
-setInterval(function () {
-  lines.forEach((line) => {
-    const second = Math.random() * (1500 - 0) + 0;
-    line.style.transitionDelay = `${second}ms`;
-    line.classList.toggle("bounce");
-    console.log('test')
-  })
-}, 2500);
+var time = 2000,
+  intId;
 
+function linesAnitmation(lines) {
+  intId = setInterval(function () {
+    lines.forEach((line) => {
+      const second = Math.random() * (1500 - 0) + 0;
+      line.style.transitionDelay = `${second}ms`;
+      line.classList.toggle("bounce");
+    });
+    time = lines[0].classList.contains("bounce") ? 6000 : 2000; //some new value
+    intId = window.clearInterval(intId);
+    linesAnitmation(lines);
+  }, time);
+}
+
+linesAnitmation(lines);
