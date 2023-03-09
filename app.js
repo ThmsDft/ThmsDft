@@ -1,0 +1,15 @@
+
+
+confetti({
+  particleCount: 100,
+  spread: 50,
+  origin: { y: 0.5, x: 0 },
+  angle: 45
+});
+
+confetti({
+  particleCount: 100,
+  spread: 50,
+  origin: { y: 0.5, x: 1 },
+  angle: 135
+});
