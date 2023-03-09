@@ -72,6 +72,7 @@ header nav ul li:last-child {
 main {
   width: 390px;
   margin: 0 auto;
+  padding-bottom: 30px;
   background-color: var(--bg-color);
 }
 
