@@ -301,5 +301,81 @@ section.skills div img {
   left: 50%;
   max-width: 60%;
   max-height: 60%;
-  filter: invert(70%) sepia(97%) saturate(1358%) hue-rotate(110deg) brightness(96%) contrast(101%);
+  filter: invert(70%) sepia(97%) saturate(1358%) hue-rotate(110deg)
+    brightness(96%) contrast(101%);
 }
+
+/* ------------About------------ */
+
+section.about {
+  padding: 0 20px;
+  padding-top: 70px;
+}
+
+section.about div:nth-child(odd) {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+section.about div:nth-child(even) {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+
+section.about div h2 {
+  border-radius: 19px;
+  padding: 10px 15px;
+  margin-left: 13px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
+section.about div h2 span {
+  color: var(--main-color);
+}
+
+section.about div:nth-child(odd) img {
+  position: absolute;
+  height: 32px;
+  bottom: 0;
+  left: 0;
+}
+
+section.about div:nth-child(even) img {
+  position: absolute;
+  height: 32px;
+  bottom: 0;
+  right: 0;
+}
+
+
+section.about div p {
+  width: 277px;
+  border-radius: 19px;
+  padding: 10px 15px;
+  margin-right: 13px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--text-color);
+  background-color: var(--main-color);
+}
+
+section.about div:nth-child(4) p {
+  width: 226px;
+}
+
+section.about div:nth-child(6) p {
+  width: 286px;
+}
+
+
