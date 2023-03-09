@@ -30,20 +30,17 @@ function linesAnitmation(lines) {
   }, time);
 }
 
-const bubles = document.querySelectorAll("section.skills div");
-
-console.log(bubles)
+const bubbles = document.querySelectorAll("section.skills div");
 
 setInterval(function () {
-  bubles.forEach((buble) => {
+  bubbles.forEach((bubble) => {
     const second = Math.random() * (1500 - 0) + 0;
-    const scale = Math.random() * (1.2 - 1) + 1;
+    const scale = Math.random() * (1.2 - 0.9) + 0.9;
     const x = Math.random() * (15 - (-15)) + (-15);
     const y = Math.random() * (15 - (-15)) + (-15);
-    buble.style.transitionDelay = `${second}ms`;
-    buble.style.scale = scale
-    buble.style.transform = `translate(${x}%, ${y}%)`
-    buble.classList.toggle("levitation");
+    bubble.style.transitionDelay = `${second}ms`;
+    bubble.style.scale = scale
+    bubble.style.transform = `translate(${x}%, ${y}%)`
   });
 }, 3000);
 
