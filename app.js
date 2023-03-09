@@ -1,5 +1,3 @@
-
-
 // confetti({
 //   particleCount: 100,
 //   spread: 50,
@@ -14,12 +12,12 @@
 //   angle: 135
 // });
 
-const lines = document.querySelectorAll('section.hero div.container div span')
+const lines = document.querySelectorAll("section.hero div.container div span");
 
-console.log(lines)
-
-lines.forEach(line => {
-  const second = Math.random() * (1500 - 0) + 0;
-  line.style.transitionDelay = `${second}ms`
-  line.classList.add('bounce')
-})
+window.addEventListener("load", () => {
+  lines.forEach((line) => {
+    const second = Math.random() * (1500 - 0) + 0;
+    line.style.transitionDelay = `${second}ms`;
+    line.classList.add("bounce");
+  });
+});
