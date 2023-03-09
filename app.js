@@ -30,4 +30,24 @@ function linesAnitmation(lines) {
   }, time);
 }
 
+const bubles = document.querySelectorAll("section.skills div");
+
+console.log(bubles)
+
+setInterval(function () {
+  bubles.forEach((buble) => {
+    const second = Math.random() * (1500 - 0) + 0;
+    const scale = Math.random() * (1.1 - 1) + 1;
+    const x = Math.random() * (15 - (-15)) + (-15);
+    const y = Math.random() * (15 - (-15)) + (-15);
+    buble.style.transitionDelay = `${second}ms`;
+    buble.style.scale = scale
+    buble.style.transform = `translate(${x}%, ${y}%)`
+    buble.classList.toggle("levitation");
+  });
+}, 2000);
+
+
 linesAnitmation(lines);
+
+
