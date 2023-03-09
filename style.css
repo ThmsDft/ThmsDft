@@ -2,8 +2,8 @@
 
 :root {
   --main-color: #00edb4;
-  --secondary-color: #00BB8E;
-  --medium-color: #00E3AD;
+  --secondary-color: #00bb8e;
+  --medium-color: #00e3ad;
   --text-color: #001d16;
   --bg-color: white;
 }
@@ -196,7 +196,6 @@ section.hero p {
   color: var(--text-color);
 }
 
-
 /* ------------Skills------------ */
 
 section.skills {
@@ -210,76 +209,76 @@ section.skills {
   height: 265px;
 }
 
-section.skills h2{
-font-style: normal;
-font-weight: 900;
-font-size: 24px;
-text-align: center;
-color: var(--text-color);
+section.skills h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: var(--text-color);
 }
 
-section.skills h2 span{
+section.skills h2 span {
   color: var(--main-color);
 }
 
-
-section.skills div{
+section.skills div {
   display: block;
   position: absolute;
   border-radius: 50%;
   background-color: var(--secondary-color);
+  box-shadow: 0px 0px 15px rgba(0, 237, 182, 0.6);
 }
 
-section.skills div.css{
+section.skills div.css {
   top: 40px;
   left: 37px;
   width: 46px;
   height: 46px;
 }
 
-section.skills div.js{
+section.skills div.js {
   top: 40px;
   left: 128px;
   width: 39px;
   height: 39px;
 }
 
-section.skills div.react{
+section.skills div.react {
   top: 0;
   right: 93px;
   width: 79px;
   height: 79px;
 }
 
-section.skills div.ps{
+section.skills div.ps {
   top: 79px;
   right: 45px;
   width: 35px;
   height: 35px;
 }
 
-section.skills div.html{
+section.skills div.html {
   top: 119px;
   left: 72px;
   width: 35px;
   height: 35px;
 }
 
-section.skills div.php{
+section.skills div.php {
   bottom: 20px;
   left: 41px;
   width: 56px;
   height: 56px;
 }
 
-section.skills div.figma{
+section.skills div.figma {
   bottom: 0;
   right: 141px;
   width: 85px;
   height: 85px;
 }
 
-section.skills div.ai{
+section.skills div.ai {
   bottom: 0;
   right: 50px;
   width: 56px;
