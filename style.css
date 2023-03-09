@@ -233,7 +233,7 @@ section.skills h2 span {
 section.skills div {
   position: absolute;
   border-radius: 50%;
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   box-shadow: 0px 0px 15px rgba(0, 237, 182, 0.4);
   transition: all 1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
@@ -301,8 +301,8 @@ section.skills div img {
   left: 50%;
   max-width: 60%;
   max-height: 60%;
-  filter: invert(70%) sepia(97%) saturate(1358%) hue-rotate(110deg)
-    brightness(96%) contrast(101%);
+  filter: invert(49%) sepia(100%) saturate(815%) hue-rotate(125deg)
+    brightness(89%) contrast(101%);
 }
 
 /* ------------About------------ */
@@ -355,7 +355,6 @@ section.about div:nth-child(even) img {
   right: 0;
 }
 
-
 section.about div p {
   width: 277px;
   border-radius: 19px;
@@ -377,5 +376,3 @@ section.about div:nth-child(4) p {
 section.about div:nth-child(6) p {
   width: 286px;
 }
-
-
