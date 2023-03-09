@@ -226,7 +226,7 @@ section.skills div {
   position: absolute;
   border-radius: 50%;
   background-color: var(--secondary-color);
-  box-shadow: 0px 0px 15px rgba(0, 237, 182, 0.6);
+  box-shadow: 0px 0px 15px rgba(0, 237, 182, 0.4);
 }
 
 section.skills div.css {
