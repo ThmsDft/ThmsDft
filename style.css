@@ -70,6 +70,7 @@ header nav ul li:last-child {
 /* ------------main------------ */
 
 main {
+  overflow: hidden;
   z-index: -5;
   max-width: 390px;
   margin: 0 auto;

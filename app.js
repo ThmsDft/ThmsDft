@@ -98,18 +98,6 @@ const rightHand = document.querySelector(
   "section.touch div.container img:nth-child(4)"
 );
 
-// window.addEventListener('scroll', function() {
-
-//   var positions = elementPosition(leftHand);
-
-//   console.log({
-//     "Position horizontale dans la fenêtre": positions.clientX,
-//     "Position verticale dans la fenêtre": positions.clientY,
-//     "Position horizontale dans le document": positions.viewportX,
-//     "Position verticale dans le document": positions.viewportY
-//  });
-
-// });
 
 window.addEventListener("scroll", function () {
   const windowHeight = window.innerHeight - 300;
