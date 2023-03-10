@@ -47,6 +47,8 @@ header nav ul {
 }
 
 header nav ul li {
+  padding: 5px 0;
+  cursor: pointer;
   font-family: "Jost";
   font-style: normal;
   font-weight: 900;

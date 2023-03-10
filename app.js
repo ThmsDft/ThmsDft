@@ -1,13 +1,22 @@
 const tomHead = document.querySelector("section.hero img");
+const tomHeadFooter = document.querySelector("section.touch > img");
 
 tomHead.addEventListener("click", () => {
+  confetti({
+    particleCount: 100,
+    spread: 50,
+    origin: { y: 0, x: 0.5 },
+    angle: -90,
+  });
+});
+
+tomHeadFooter.addEventListener("click", () => {
   confetti({
     particleCount: 100,
     spread: 50,
     origin: { y: 1, x: 0.5 },
     angle: 90,
   });
-
   // confetti({
   //   particleCount: 100,
   //   spread: 50,
@@ -98,13 +107,15 @@ const rightHand = document.querySelector(
   "section.touch div.container img:nth-child(4)"
 );
 
-const touchHeading = document.querySelectorAll('section.touch div.container h2')
-
+const touchHeading = document.querySelectorAll(
+  "section.touch div.container h2"
+);
 
 window.addEventListener("scroll", function () {
-  console.log(window.innerHeight)
-  const windowHeight = window.innerHeight - leftHand.getBoundingClientRect().bottom*0.3;
-  const position = leftHand.getBoundingClientRect().bottom - window.innerHeight*0.6;
+  const windowHeight =
+    window.innerHeight - leftHand.getBoundingClientRect().bottom * 0.3;
+  const position =
+    leftHand.getBoundingClientRect().bottom - window.innerHeight * 0.6;
 
   const calculPourcentage = (position * 100) / windowHeight;
   const pourcentage =
@@ -114,7 +125,6 @@ window.addEventListener("scroll", function () {
       ? 0
       : calculPourcentage;
 
-  leftHand.style.transform = `translateX(-${pourcentage}%)`
-  rightHand.style.transform = `translateX(${pourcentage}%)`
-  
+  leftHand.style.transform = `translateX(-${pourcentage}%)`;
+  rightHand.style.transform = `translateX(${pourcentage}%)`;
 });
