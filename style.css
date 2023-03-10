@@ -230,7 +230,8 @@ section.skills h2 span {
   color: var(--main-color);
 }
 
-section.skills div {
+section.skills a {
+  cursor: pointer;
   position: absolute;
   border-radius: 50%;
   background-color: var(--main-color);
@@ -238,63 +239,63 @@ section.skills div {
   transition: all 1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
-section.skills div.css {
+section.skills a.css {
   top: 40px;
   left: 37px;
   width: 46px;
   height: 46px;
 }
 
-section.skills div.js {
+section.skills a.js {
   top: 40px;
   left: 128px;
   width: 39px;
   height: 39px;
 }
 
-section.skills div.react {
+section.skills a.react {
   top: 0;
   right: 93px;
   width: 79px;
   height: 79px;
 }
 
-section.skills div.ps {
+section.skills a.ps {
   top: 79px;
   right: 45px;
   width: 35px;
   height: 35px;
 }
 
-section.skills div.html {
+section.skills a.html {
   top: 119px;
   left: 72px;
   width: 35px;
   height: 35px;
 }
 
-section.skills div.php {
+section.skills a.php {
   bottom: 20px;
   left: 41px;
   width: 56px;
   height: 56px;
 }
 
-section.skills div.figma {
+section.skills a.figma {
   bottom: 0;
   right: 141px;
   width: 85px;
   height: 85px;
 }
 
-section.skills div.ai {
+section.skills a.ai {
   bottom: 52px;
   right: 50px;
   width: 56px;
   height: 56px;
 }
 
-section.skills div img {
+section.skills a img {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;

@@ -41,7 +41,7 @@ function linesAnitmation(lines) {
   }, time);
 }
 
-const bubbles = document.querySelectorAll("section.skills div");
+const bubbles = document.querySelectorAll("section.skills a");
 
 setInterval(function () {
   bubbles.forEach((bubble) => {
