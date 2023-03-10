@@ -314,7 +314,7 @@ section.about {
 }
 
 section.about > div {
-  transition: all 2s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  transition: all 1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
 section.about div:nth-child(odd) {
