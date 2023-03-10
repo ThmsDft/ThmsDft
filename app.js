@@ -78,23 +78,15 @@ function scrollReveal() {
   for (const message of messages) {
     var windowHeight = window.innerHeight;
     var revealTop = message.getBoundingClientRect().top;
-    const messageClass = message.classList.contains('left') ? 'slide-right' : 'slide-left'
+    const messageClass = message.classList.contains("left")
+      ? "slide-right"
+      : "slide-left";
     if (revealTop < windowHeight - revealPoint) {
       message.classList.add(messageClass);
     } else {
       message.classList.remove(messageClass);
     }
   }
-
-  // for (var i = 0; i < revealElements.length; i++) {
-  //   var windowHeight = window.innerHeight;
-  //   var revealTop = revealElements[i].getBoundingClientRect().top;
-  //   if (revealTop < windowHeight - revealPoint) {
-  //     revealElement[i].classList.add("slide-right");
-  //   } else {
-  //     revealElement[i].classList.remove("slide-right");
-  //   }
-  // }
 }
 
 window.addEventListener("scroll", scrollReveal);

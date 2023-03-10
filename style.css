@@ -70,6 +70,7 @@ header nav ul li:last-child {
 /* ------------main------------ */
 
 main {
+  z-index: -5;
   width: 390px;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -387,8 +388,67 @@ section.about div:nth-child(6) p {
   width: 286px;
 }
 
-
-section.about div.slide-right, section.about div.slide-left {
+section.about div.slide-right,
+section.about div.slide-left {
   transform: translate(0, 0);
- opacity: 1;
+  opacity: 1;
+}
+
+/* ------------Touch------------ */
+
+section.touch {
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+section.touch div.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section.touch div.container h2{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 100px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+section.touch div.container h2:nth-child(3){
+  z-index: 4;
+  width: 100px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: transparent;
+  text-align: center;
+}
+
+section.touch div.container h2 span{
+  color: var(--main-color);
+}
+
+section.touch div.container img:nth-child(1){
+  z-index: 3;
+  position: absolute;
+  left: -2px;
+  top: 4px;
+  width: 188px;
+}
+
+section.touch div.container img:nth-child(4){
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  top: -6px;
+  width: 205px;
 }
