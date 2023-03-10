@@ -71,7 +71,7 @@ header nav ul li:last-child {
 
 main {
   z-index: -5;
-  width: 390px;
+  max-width: 390px;
   margin: 0 auto;
   background-color: var(--bg-color);
 }
@@ -398,7 +398,6 @@ section.about div.slide-left {
 section.touch {
   margin-top: 50px;
   width: 100%;
-  overflow: hidden;
 }
 
 section.touch div.container {
@@ -438,9 +437,10 @@ section.touch div.container h2 span {
 section.touch div.container img:nth-child(1) {
   z-index: 3;
   position: absolute;
-  left: -2px;
+  left: 0;
   top: 4px;
   width: 188px;
+  transform: translateX(-100%);
 }
 
 section.touch div.container img:nth-child(4) {
@@ -449,6 +449,7 @@ section.touch div.container img:nth-child(4) {
   right: 0;
   top: -6px;
   width: 205px;
+  transform: translateX(100%);
 }
 
 section.touch p {

@@ -90,3 +90,39 @@ function scrollReveal() {
 }
 
 window.addEventListener("scroll", scrollReveal);
+
+const leftHand = document.querySelector(
+  "section.touch div.container img:nth-child(1)"
+);
+const rightHand = document.querySelector(
+  "section.touch div.container img:nth-child(4)"
+);
+
+// window.addEventListener('scroll', function() {
+
+//   var positions = elementPosition(leftHand);
+
+//   console.log({
+//     "Position horizontale dans la fenêtre": positions.clientX,
+//     "Position verticale dans la fenêtre": positions.clientY,
+//     "Position horizontale dans le document": positions.viewportX,
+//     "Position verticale dans le document": positions.viewportY
+//  });
+
+// });
+
+window.addEventListener("scroll", function () {
+  const windowHeight = window.innerHeight - 300;
+  const position = leftHand.getBoundingClientRect().bottom - 300;
+
+  const calculPourcentage = (position * 100) / windowHeight;
+  const pourcentage =
+    calculPourcentage > 100
+      ? 100
+      : calculPourcentage < 0
+      ? 0
+      : calculPourcentage;
+  
+  leftHand.style.transform = `translateX(-${pourcentage}%)`
+  rightHand.style.transform = `translateX(${pourcentage}%)`
+});
