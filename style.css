@@ -57,10 +57,13 @@ header nav ul li {
 }
 
 header nav ul li span {
+  margin: 0 auto;
   display: block;
   width: 30px;
   height: 2px;
   background-color: var(--text-color);
+  -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 header nav ul li:last-child {
@@ -69,6 +72,15 @@ header nav ul li:last-child {
   gap: 4px;
 }
 
+header nav ul li.hamburger.active span:nth-child(1) {
+  width: 15px;
+  transform: translate(-6px, 2px) rotate(45deg);
+}
+
+header nav ul li.hamburger.active span:nth-child(2) {
+  width: 15px;
+  transform: translate(-6px, -4px) rotate(-45deg);
+}
 /* ------------main------------ */
 
 main {

@@ -1,3 +1,9 @@
+const hamburger = document.querySelector('.hamburger')
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle('active')
+});
+
 const tomHead = document.querySelector("section.hero img");
 const tomHeadFooter = document.querySelector("section.touch > img");
 
