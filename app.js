@@ -100,8 +100,9 @@ const rightHand = document.querySelector(
 
 
 window.addEventListener("scroll", function () {
-  const windowHeight = window.innerHeight - 300;
-  const position = leftHand.getBoundingClientRect().bottom - 300;
+  console.log(window.innerHeight)
+  const windowHeight = window.innerHeight - leftHand.getBoundingClientRect().bottom*0.3;
+  const position = leftHand.getBoundingClientRect().bottom - window.innerHeight*0.6;
 
   const calculPourcentage = (position * 100) / windowHeight;
   const pourcentage =
