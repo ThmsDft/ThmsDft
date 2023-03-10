@@ -22,19 +22,25 @@ body {
 /* ------------header------------ */
 header {
   z-index: 999;
-  width: 100%;
+  width: 390px;
   height: 40px;
   position: fixed;
+  transform: translate(-50%, 0);
   top: 0;
-  left: 0;
-  background-color: var(--bg-color);
+  left: 50%;
+}
+
+header.active{
+  height: 100vh;
+  backdrop-filter: blur(20px);
 }
 
 header nav {
   margin: 0 auto;
-  height: 100%;
+  height: 40px;
   width: 390px;
   padding: 0 20px;
+  background-color: var(--bg-color)
 }
 
 header nav ul {
