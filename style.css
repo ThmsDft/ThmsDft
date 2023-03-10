@@ -34,6 +34,7 @@ header {
 header.active{
   height: 100vh;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 header nav {
