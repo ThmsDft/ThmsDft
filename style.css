@@ -73,7 +73,6 @@ main {
   z-index: -5;
   width: 390px;
   margin: 0 auto;
-  padding-bottom: 30px;
   background-color: var(--bg-color);
 }
 
@@ -399,17 +398,16 @@ section.about div.slide-left {
 section.touch {
   margin-top: 50px;
   width: 100%;
-  height: 100px;
   overflow: hidden;
 }
 
 section.touch div.container {
   width: 100%;
-  height: 100%;
+  height: 100px;
   position: relative;
 }
 
-section.touch div.container h2{
+section.touch div.container h2 {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -423,7 +421,7 @@ section.touch div.container h2{
   text-align: center;
 }
 
-section.touch div.container h2:nth-child(3){
+section.touch div.container h2:nth-child(3) {
   z-index: 4;
   width: 100px;
   font-style: normal;
@@ -433,11 +431,11 @@ section.touch div.container h2:nth-child(3){
   text-align: center;
 }
 
-section.touch div.container h2 span{
+section.touch div.container h2 span {
   color: var(--main-color);
 }
 
-section.touch div.container img:nth-child(1){
+section.touch div.container img:nth-child(1) {
   z-index: 3;
   position: absolute;
   left: -2px;
@@ -445,10 +443,58 @@ section.touch div.container img:nth-child(1){
   width: 188px;
 }
 
-section.touch div.container img:nth-child(4){
+section.touch div.container img:nth-child(4) {
   z-index: 0;
   position: absolute;
   right: 0;
   top: -6px;
   width: 205px;
 }
+
+section.touch p {
+  padding: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+}
+
+section.touch ul {
+  margin-top: 30px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+section.touch ul li a img{
+  height: 30px;
+}
+
+section.touch > img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-right: 20px;
+  height: 255px;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--bg-color);
+  border-top: solid 2px var(--main-color);
+}
+
+footer p{
+  padding: 30px 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+}
+
+
+
