@@ -419,6 +419,7 @@ section.touch div.container h2 {
   font-size: 24px;
   color: var(--text-color);
   text-align: center;
+  transform-origin: left;
 }
 
 section.touch div.container h2:nth-child(3) {

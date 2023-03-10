@@ -98,6 +98,8 @@ const rightHand = document.querySelector(
   "section.touch div.container img:nth-child(4)"
 );
 
+const touchHeading = document.querySelectorAll('section.touch div.container h2')
+
 
 window.addEventListener("scroll", function () {
   console.log(window.innerHeight)
@@ -111,7 +113,8 @@ window.addEventListener("scroll", function () {
       : calculPourcentage < 0
       ? 0
       : calculPourcentage;
-  
+
   leftHand.style.transform = `translateX(-${pourcentage}%)`
   rightHand.style.transform = `translateX(${pourcentage}%)`
+  
 });
