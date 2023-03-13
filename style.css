@@ -33,6 +33,7 @@ header {
 }
 
 header.active {
+  background-color: transparent;
   height: 100vh;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
