@@ -14,6 +14,28 @@ navInfo.addEventListener("click", () => {
   navInfo.classList.toggle('active')
 });
 
+
+const SkillInfo = document.querySelector('section.skills div.skillInfo')
+const info = document.querySelector('section.skills div.skillInfo div.card')
+const skillsButtons = document.querySelectorAll('section.skills button')
+
+
+skillsButtons.forEach(button => {
+  button.addEventListener('click', ()=>{
+    SkillInfo.classList.toggle('active')
+    info.classList.toggle('active')
+  })
+})
+
+SkillInfo.addEventListener('click', ()=>{
+  SkillInfo.classList.toggle('active')
+  info.classList.toggle('active')
+})
+
+
+
+
+
 const tomHead = document.querySelector("section.hero img");
 const tomHeadFooter = document.querySelector("section.touch > img");
 

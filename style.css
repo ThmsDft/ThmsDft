@@ -96,6 +96,7 @@ header nav ul li.hamburger.active span:nth-child(2) {
 header nav div.info{
   position: absolute;
   background-color: transparent;
+  visibility: hidden;
   width: 100vw;
   height: calc(100vh - 50px);
   transform: translate(-50%, 0);
@@ -106,6 +107,7 @@ header nav div.info{
 }
 
 header nav div.info.active{
+  visibility: visible;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   background-color: #00edb66b;
@@ -287,7 +289,7 @@ section.skills {
   min-height: 290px;
 }
 
-section.skills h2 {
+section.skills > h2 {
   z-index: 2;
   font-style: normal;
   font-weight: 900;
@@ -390,7 +392,49 @@ section.skills button img {
   max-width: 60%;
   max-height: 60%;
   filter: invert(49%) sepia(100%) saturate(815%) hue-rotate(125deg)
-    brightness(89%) contrast(101%);
+  brightness(89%) contrast(101%);
+}
+
+ section.skills div.skillInfo{
+  z-index: 999;
+  position: fixed;
+  background-color: transparent;
+  visibility: hidden;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 50px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+section.skills div.skillInfo.active{
+  visibility: visible;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: #00edb66b;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+section.skills div.skillInfo div.card{
+  visibility: hidden;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 40vw;
+  min-width: 300px;
+  margin-top: -50px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.1s linear;
+}
+section.skills div.skillInfo div.card.active{
+  visibility: visible;
 }
 
 @media (min-width: 1250px) {
