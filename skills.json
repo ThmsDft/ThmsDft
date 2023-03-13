@@ -1,0 +1,34 @@
+[
+      {
+        "name": "CSS",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      },
+      {
+        "name": "Javascript",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      },
+      {
+        "name": "React",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      },
+      {
+        "name": "Photoshop",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      },
+      {
+        "name": "HTML",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      },
+      {
+        "name": "PHP",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      },
+      {
+        "name": "Figma",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      },
+      {
+        "name": "Illustrator",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+      }
+    ]

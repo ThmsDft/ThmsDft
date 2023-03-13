@@ -1,3 +1,6 @@
+import skills from './skills.json' assert {type: 'json'}
+
+
 const hamburger = document.querySelector('.hamburger')
 const nav = document.querySelector('nav')
 const navInfo = document.querySelector('nav div.info')
@@ -19,11 +22,17 @@ const SkillInfo = document.querySelector('section.skills div.skillInfo')
 const info = document.querySelector('section.skills div.skillInfo div.card')
 const skillsButtons = document.querySelectorAll('section.skills button')
 
-
 skillsButtons.forEach(button => {
   button.addEventListener('click', ()=>{
     SkillInfo.classList.toggle('active')
     info.classList.toggle('active')
+    // console.log(button.firstChild.alt)
+    for (const skill of skills) {
+      if (skill.name === button.firstChild.alt){
+        info.innerHTML = `<h2>${skill.name}</h2>
+        <p>${skill.description}</p>`
+      }
+    }
   })
 })
 
