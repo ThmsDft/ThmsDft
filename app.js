@@ -61,12 +61,12 @@ function linesAnitmation(lines) {
 linesAnitmation(lines);
 
 
-const bubbles = document.querySelectorAll("section.skills a");
+const bubbles = document.querySelectorAll("section.skills button");
 
 setInterval(function () {
   bubbles.forEach((bubble) => {
     const second = Math.random() * (1500 - 0) + 0;
-    const scale = Math.random() * (1 - 0.7) + 0.7;
+    const scale = Math.random() * (1 - 0.5) + 0.5;
     const x = Math.random() * (15 - -15) + -15;
     const y = Math.random() * (15 - -15) + -15;
     bubble.style.transitionDelay = `${second}ms`;

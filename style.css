@@ -275,8 +275,9 @@ section.skills h2 span {
   color: var(--main-color);
 }
 
-section.skills a {
+section.skills button {
   cursor: pointer;
+  border: none;
   position: absolute;
   border-radius: 50%;
   background-color: var(--main-color);
@@ -284,7 +285,7 @@ section.skills a {
   transition: all 1s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
-section.skills a.css {
+section.skills button.css {
   top: 12%;
   left: 10%;
   width: 12vw;
@@ -293,7 +294,7 @@ section.skills a.css {
   max-height: 150px;
 }
 
-section.skills a.js {
+section.skills button.js {
   top: 12%;
   left: 33%;
   width: 10vw;
@@ -302,7 +303,7 @@ section.skills a.js {
   max-height: 125px;
 }
 
-section.skills a.react {
+section.skills button.react {
   top: 0%;
   right: 20%;
   width: 20vw;
@@ -311,7 +312,7 @@ section.skills a.react {
   max-height: 250px;
 }
 
-section.skills a.ps {
+section.skills button.ps {
   top: 40%;
   right: 12%;
   width: 9vw;
@@ -320,7 +321,7 @@ section.skills a.ps {
   max-height: 112.5px;
 }
 
-section.skills a.html {
+section.skills button.html {
   top: 50%;
   left: 20%;
   width: 9vw;
@@ -329,7 +330,7 @@ section.skills a.html {
   max-height: 112.5px;
 }
 
-section.skills a.php {
+section.skills button.php {
   bottom: 5%;
   left: 8%;
   width: 14.5vw;
@@ -338,7 +339,7 @@ section.skills a.php {
   max-height: 181.5px;
 }
 
-section.skills a.figma {
+section.skills button.figma {
   bottom: -5%;
   right: 38%;
   width: 22vw;
@@ -347,7 +348,7 @@ section.skills a.figma {
   max-height: 275px;
 }
 
-section.skills a.ai {
+section.skills button.ai {
   bottom: 10%;
   right: 16%;
   width: 14.5vw;
@@ -356,7 +357,7 @@ section.skills a.ai {
   max-height: 181.5px;
 }
 
-section.skills a img {
+section.skills button img {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -557,7 +558,9 @@ section.touch ul {
 }
 
 section.touch ul li a img {
-  height: 30px;
+  height: 4vw;
+  min-height: 30px;
+  max-height: 50px;
 }
 
 section.touch > img {
