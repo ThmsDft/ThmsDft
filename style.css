@@ -27,12 +27,12 @@ header {
   transform: translate(-50%, 0);
   top: 0;
   left: 50%;
-  transition: linear .3s;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  transition: linear 0.3s;
+  background-color: var(--bg-color);
+  border-bottom: solid var(--main-color);
 }
 
-header.active{
+header.active {
   height: 100vh;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -71,7 +71,7 @@ header nav ul li span {
   height: 2px;
   background-color: var(--text-color);
   -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 header nav ul li:last-child {
@@ -230,18 +230,18 @@ section.hero p {
   color: var(--text-color);
 }
 
-@media (min-width: 1250px){
+@media (min-width: 1250px) {
   section.hero h1 {
     font-size: 100px;
   }
 
-  section.hero p{
+  section.hero p {
     font-size: 25px;
   }
 }
 
-@media (max-width: 680px){
-  section.hero p{
+@media (max-width: 680px) {
+  section.hero p {
     font-size: 13px;
   }
 }
@@ -366,8 +366,8 @@ section.skills a img {
     brightness(89%) contrast(101%);
 }
 
-@media (min-width: 1250px){
-  section.skills h2{
+@media (min-width: 1250px) {
+  section.skills h2 {
     font-size: 75px;
   }
 }
@@ -376,7 +376,7 @@ section.skills a img {
 
 section.about {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 700px;
   padding: 30px 20px;
   padding-top: 50px;
 }
@@ -409,7 +409,7 @@ section.about div h2 {
   display: inline-block;
   font-style: normal;
   font-weight: 900;
-  font-size: 2.2vw;
+  font-size: 27px;
   color: var(--bg-color);
   background-color: var(--text-color);
 }
@@ -435,25 +435,28 @@ section.about div:nth-child(even) img {
 section.about div p {
   width: 25vw;
   min-width: 277px;
+  max-width: 310px;
   border-radius: 19px;
   padding: 10px 15px;
   margin-right: 13px;
   display: inline-block;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5vw;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 20px;
   color: var(--text-color);
   background-color: var(--main-color);
 }
 
 section.about div:nth-child(4) p {
   min-width: 226px;
+  max-width: 370px;
   width: 30vw;
 }
 
 section.about div:nth-child(6) p {
   min-width: 286px;
+  max-width: 430px;
   width: 35vw;
 }
 
@@ -461,6 +464,19 @@ section.about div.slide-right,
 section.about div.slide-left {
   transform: translate(0, 0);
   opacity: 1;
+}
+
+@media (min-width: 800px) {
+  section.about div p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  section.about div h2 {
+    font-size: 18px;
+  }
 }
 
 /* ------------Touch------------ */
@@ -539,11 +555,11 @@ section.touch ul {
   gap: 15vw;
 }
 
-section.touch ul li a img{
+section.touch ul li a img {
   height: 30px;
 }
 
-section.touch > img{
+section.touch > img {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
@@ -551,14 +567,14 @@ section.touch > img{
   height: 255px;
 }
 
-@media (min-width: 1250px){
-  section.touch div.container h2{
+@media (min-width: 1250px) {
+  section.touch div.container h2 {
     font-size: 75px;
   }
   section.touch div.container {
     height: 312px;
   }
-  section.touch p{
+  section.touch p {
     font-size: 18px;
     line-height: 30px;
   }
@@ -567,38 +583,31 @@ section.touch > img{
   }
 }
 
-@media (min-width: 900px){
-  section.touch p{
+@media (min-width: 900px) {
+  section.touch p {
     font-size: 18px;
     line-height: 30px;
   }
 }
 
-@media (max-width: 680px){
-  section.touch p{
-    font-size: 13px;
+@media (max-width: 680px) {
+  section.touch p {
+    font-size: 15px;
     line-height: 20px;
   }
 }
-
-
-
 
 /* ------------Footer------------ */
 
 footer {
   width: 100%;
-  background-color: var(--bg-color);
-  border-top: solid 2px var(--main-color);
+  border-top: solid var(--main-color);
 }
 
-footer p{
+footer p {
   padding: 30px 0;
   text-align: center;
   font-style: normal;
   font-weight: 900;
   font-size: 10px;
 }
-
-
-
