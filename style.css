@@ -239,6 +239,12 @@ section.hero p {
   }
 }
 
+@media (max-width: 680px){
+  section.hero p{
+    font-size: 13px;
+  }
+}
+
 /* ------------Skills------------ */
 
 section.skills {
@@ -500,7 +506,7 @@ section.touch p {
   padding: 20px;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 2vw;
   line-height: 2.8vw;
   text-align: center;
 }
@@ -540,6 +546,20 @@ section.touch > img{
   }
   section.touch ul {
     gap: 200px;
+  }
+}
+
+@media (min-width: 900px){
+  section.touch p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 680px){
+  section.touch p{
+    font-size: 13px;
+    line-height: 20px;
   }
 }
 
