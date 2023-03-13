@@ -58,12 +58,15 @@ function linesAnitmation(lines) {
   }, time);
 }
 
+linesAnitmation(lines);
+
+
 const bubbles = document.querySelectorAll("section.skills a");
 
 setInterval(function () {
   bubbles.forEach((bubble) => {
     const second = Math.random() * (1500 - 0) + 0;
-    const scale = Math.random() * (1.2 - 0.9) + 0.9;
+    const scale = Math.random() * (1 - 0.7) + 0.7;
     const x = Math.random() * (15 - -15) + -15;
     const y = Math.random() * (15 - -15) + -15;
     bubble.style.transitionDelay = `${second}ms`;
@@ -72,7 +75,6 @@ setInterval(function () {
   });
 }, 3000);
 
-linesAnitmation(lines);
 
 /* =========SCROLL REVEAL========= */
 

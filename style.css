@@ -22,12 +22,14 @@ body {
 header {
   z-index: 999;
   width: 100%;
-  height: 40px;
+  height: 50px;
   position: fixed;
   transform: translate(-50%, 0);
   top: 0;
   left: 50%;
   transition: linear .3s;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 header.active{
@@ -38,10 +40,9 @@ header.active{
 
 header nav {
   margin: 0 auto;
-  height: 40px;
+  height: 50px;
   max-width: 1250px;
   padding: 0 20px;
-  background-color: var(--bg-color)
 }
 
 header nav ul {
@@ -261,6 +262,7 @@ section.skills {
 }
 
 section.skills h2 {
+  z-index: 2;
   font-style: normal;
   font-weight: 900;
   font-size: 6vw;
@@ -282,59 +284,59 @@ section.skills a {
 }
 
 section.skills a.css {
-  top: 40px;
-  left: 37px;
-  width: 46px;
-  height: 46px;
+  top: 12%;
+  left: 10%;
+  width: 12vw;
+  height: 12vw;
 }
 
 section.skills a.js {
-  top: 40px;
-  left: 128px;
-  width: 39px;
-  height: 39px;
+  top: 12%;
+  left: 33%;
+  width: 10vw;
+  height: 10vw;
 }
 
 section.skills a.react {
-  top: 0;
-  right: 93px;
-  width: 79px;
-  height: 79px;
+  top: 0%;
+  right: 20%;
+  width: 20vw;
+  height: 20vw;
 }
 
 section.skills a.ps {
-  top: 79px;
-  right: 45px;
-  width: 35px;
-  height: 35px;
+  top: 40%;
+  right: 12%;
+  width: 9vw;
+  height: 9vw;
 }
 
 section.skills a.html {
-  top: 119px;
-  left: 72px;
-  width: 35px;
-  height: 35px;
+  top: 50%;
+  left: 20%;
+  width: 9vw;
+  height: 9vw;
 }
 
 section.skills a.php {
-  bottom: 20px;
-  left: 41px;
-  width: 56px;
-  height: 56px;
+  bottom: 5%;
+  left: 8%;
+  width: 14.5vw;
+  height: 14.5vw;
 }
 
 section.skills a.figma {
-  bottom: 0;
-  right: 141px;
-  width: 85px;
-  height: 85px;
+  bottom: -5%;
+  right: 38%;
+  width: 22vw;
+  height: 22vw;
 }
 
 section.skills a.ai {
-  bottom: 52px;
-  right: 50px;
-  width: 56px;
-  height: 56px;
+  bottom: 10%;
+  right: 16%;
+  width: 14.5vw;
+  height: 14.5vw;
 }
 
 section.skills a img {
