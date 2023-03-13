@@ -16,6 +16,7 @@
 }
 
 body {
+
 }
 
 /* ------------header------------ */
@@ -32,18 +33,19 @@ header {
   border-bottom: solid var(--main-color);
 }
 
-header.active {
-  background-color: transparent;
-  height: 100vh;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-}
-
 header nav {
+  position: relative;
   margin: 0 auto;
   height: 50px;
   max-width: 1250px;
   padding: 0 20px;
+}
+
+header nav.active {
+  background-color: transparent;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 header nav ul {
@@ -90,6 +92,29 @@ header nav ul li.hamburger.active span:nth-child(2) {
   width: 15px;
   transform: translate(-6px, -4px) rotate(-45deg);
 }
+
+header nav div.info{
+  position: absolute;
+  background-color: transparent;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 50px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+header nav div.info.active{
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: #00edb66b;
+}
+
+
+
+
+
 /* ------------main------------ */
 
 main {
