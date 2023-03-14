@@ -20,15 +20,17 @@ navInfo.addEventListener("click", () => {
 
 const SkillInfo = document.querySelector('section.skills div.skillInfo')
 const info = document.querySelector('section.skills div.skillInfo div.card')
-const skillsButtons = document.querySelectorAll('section.skills button')
+const skillsButtons = document.querySelectorAll('section.skills button img')
+
+console.log(skillsButtons)
 
 skillsButtons.forEach(button => {
   button.addEventListener('click', ()=>{
     SkillInfo.classList.toggle('active')
     info.classList.toggle('active')
-    // console.log(button.firstChild.alt)
+    console.log(button.alt)
     for (const skill of skills) {
-      if (skill.name === button.firstChild.alt){
+      if (skill.name === button.alt){
         info.innerHTML = `<h2>${skill.name}</h2>
         <p>${skill.description}</p>`
       }
