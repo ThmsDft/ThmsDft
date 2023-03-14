@@ -25,6 +25,7 @@
 
 body {
   background-color: var(--bg-color);
+  -webkit-transition: all linear 2s;
   transition: all linear 2s;
 }
 
@@ -158,6 +159,7 @@ main {
   max-width: 1250px;
   margin: 0 auto;
   background-color: var(--bg-color);
+  -webkit-transition: all linear 2s;
   transition: all linear 2s;
 }
 
