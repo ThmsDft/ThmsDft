@@ -1,34 +1,34 @@
 [
       {
         "name": "CSS",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "CSS is a stylesheet language used for defining the presentation of web pages, including layout, fonts, and colors. It's essential for creating responsive web designs."
       },
       {
         "name": "Javascript",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "JavaScript is a programming language used for adding interactivity and dynamic features to web pages. It's widely used for web development and supported by all modern web browsers."
       },
       {
         "name": "React",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "React JS is a popular JavaScript library for creating dynamic and reusable user interfaces. It uses a programming model based on properties and states to enable efficient updates to the user interface without a complete page reload. It is used by many leading companies and is compatible with many third-party tools."
       },
       {
         "name": "Photoshop",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "Photoshop is a popular image editing software used by professionals and hobbyists alike. It offers powerful tools for creating and manipulating images, and integrates with other Adobe Creative Cloud applications for seamless collaboration."
       },
       {
         "name": "HTML",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "HTML is a markup language used for creating web pages and applications, defining the structure and content of web pages. It's an essential tool for web development."
       },
       {
         "name": "PHP",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "PHP is a popular server-side scripting language for creating dynamic web pages and applications. It's open-source, widely supported, and used by many popular websites."
       },
       {
         "name": "Figma",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "Figma is a cloud-based design and prototyping tool used by teams for real-time collaboration, with a wide range of design features, library assets, and integrations."
       },
       {
         "name": "Illustrator",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis asperiores vel debitis, officiis tempora ut, sunt sit, cumque ipsum labore modi delectus? Beatae libero minus eos unde quia eaque possimus."
+        "description": "Illustrator is a popular vector graphics software used by professionals for creating precise digital designs, logos, and typography. It integrates with other Adobe Creative Cloud applications for a seamless workflow."
       }
     ]
