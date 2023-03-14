@@ -9,6 +9,20 @@ const loadData = async () => {
   }
 };
 
+function random(){
+ return `^${Math.floor(Math.random() * 800)}`;
+}
+
+var typed = new Typed('section.hero h1 span', {
+  strings: [`T${random()}h${random()}o${random()}ma${random()}s ${random()} Du${random()}fo${random()}urt`, `a w${random()}eb ${random()} d${random()}ev${random()}e${random()}lope${random()}r`, `a web ${random()} d${random()}esi${random()}gn${random()}er`],
+  typeSpeed: 90,
+  backSpeed: 90,
+  loop: true,
+  startDelay: 30,
+  backDelay: 1000,
+  smartBackspace: true,
+});
+
 const skills = loadData();
 
 const thms = document.querySelector("header nav ul li:first-child");
