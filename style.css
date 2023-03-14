@@ -322,7 +322,7 @@ section.skills {
   margin-bottom: 50px;
   height: 50vw;
   max-height: 625px;
-  min-height: 290px;
+  min-height: 200px;
 }
 
 section.skills > h2 {
