@@ -14,18 +14,15 @@ var isDarkTheme = false;
 // });
 
 const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector("nav");
 const navInfo = document.querySelector("nav div.info");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
-  // nav.classList.toggle('active')
   navInfo.classList.toggle("active");
 });
 
 navInfo.addEventListener("click", () => {
   hamburger.classList.toggle("active");
-  // nav.classList.toggle('active')
   navInfo.classList.toggle("active");
 });
 
