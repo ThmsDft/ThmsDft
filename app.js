@@ -1,4 +1,4 @@
-// import skills from "./skills.json" assert { type: "json" };
+import skills from "./skills.json" assert { type: "json" };
 
 const thms = document.querySelector("header nav ul li:first-child");
 
