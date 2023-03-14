@@ -16,7 +16,6 @@
   --bg-color: white;
 } */
 
-
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +24,8 @@
 }
 
 body {
- background-color: var(--bg-color);
- transition: all linear 2s;
+  background-color: var(--bg-color);
+  transition: all linear 2s;
 }
 
 /* ------------header------------ */
@@ -103,7 +102,7 @@ header nav ul li.hamburger.active span:nth-child(2) {
   transform: translate(-6px, -4px) rotate(-45deg);
 }
 
-header nav div.info{
+header nav div.info {
   overflow-y: scroll;
   padding: 10%;
   position: absolute;
@@ -118,41 +117,37 @@ header nav div.info{
   transition: all 0.3s linear;
 }
 
-header nav div.info.active{
+header nav div.info.active {
   visibility: visible;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   background-color: #00edb66b;
 }
 
-header nav div.info h2{
+header nav div.info h2 {
   color: var(--text-color);
   font-size: 6vw;
 }
 
-header nav div.info p{
+header nav div.info p {
   color: var(--text-color);
   font-size: 2vw;
 }
 
-@media (max-width: 600px){
-  header nav div.info p{
+@media (max-width: 600px) {
+  header nav div.info p {
     font-size: 12px;
   }
 }
 
-@media (min-width: 1250px){
-  header nav div.info p{
+@media (min-width: 1250px) {
+  header nav div.info p {
     font-size: 25px;
   }
-  header nav div.info h2{
+  header nav div.info h2 {
     font-size: 75px;
   }
 }
-
-
-
-
 
 /* ------------main------------ */
 
@@ -430,10 +425,10 @@ section.skills button img {
   max-width: 60%;
   max-height: 60%;
   filter: invert(49%) sepia(100%) saturate(815%) hue-rotate(125deg)
-  brightness(89%) contrast(101%);
+    brightness(89%) contrast(101%);
 }
 
- section.skills div.skillInfo{
+section.skills div.skillInfo {
   color: var(--text-color);
   z-index: 999;
   position: fixed;
@@ -448,7 +443,7 @@ section.skills button img {
   transition: all 0.3s linear;
 }
 
-section.skills div.skillInfo.active{
+section.skills div.skillInfo.active {
   visibility: visible;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -457,7 +452,7 @@ section.skills div.skillInfo.active{
   transition: all 0.3s linear;
 }
 
-section.skills div.skillInfo div.card{
+section.skills div.skillInfo div.card {
   visibility: hidden;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -472,7 +467,7 @@ section.skills div.skillInfo div.card{
   -webkit-transition: all 0.3s linear;
   transition: all 0.1s linear;
 }
-section.skills div.skillInfo div.card.active{
+section.skills div.skillInfo div.card.active {
   visibility: visible;
 }
 
@@ -528,14 +523,16 @@ section.about div h2 span {
   color: var(--main-color);
 }
 
-section.about div:nth-child(odd) img {
+section.about div:nth-child(odd) svg {
+  fill: var(--text-color);
   position: absolute;
   height: 32px;
   bottom: 0;
   left: 0;
 }
 
-section.about div:nth-child(even) img {
+section.about div:nth-child(even) svg {
+  fill: var(--main-color);
   position: absolute;
   height: 32px;
   bottom: 0;
@@ -554,7 +551,7 @@ section.about div p {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  color: var(--text-color);
+  color: #001d16;
   background-color: var(--main-color);
 }
 
