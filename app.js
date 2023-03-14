@@ -1,51 +1,58 @@
-import skills from './skills.json' assert {type: 'json'}
+import skills from "./skills.json" assert { type: "json" };
 
+const thms = document.querySelector("header nav ul li:first-child");
 
-const hamburger = document.querySelector('.hamburger')
-const nav = document.querySelector('nav')
-const navInfo = document.querySelector('nav div.info')
+var isDarkTheme = false;
+
+thms.addEventListener("click", () => {
+  console.log(isDarkTheme);
+  const bgColor = isDarkTheme ? "white" : "#001d16";
+  const textColor = isDarkTheme ? "#001d16" : "white";
+  document.documentElement.style.setProperty("--bg-color", bgColor);
+  document.documentElement.style.setProperty("--text-color", textColor);
+  isDarkTheme = isDarkTheme ? false : true;
+});
+
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+const navInfo = document.querySelector("nav div.info");
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle('active')
+  hamburger.classList.toggle("active");
   // nav.classList.toggle('active')
-  navInfo.classList.toggle('active')
+  navInfo.classList.toggle("active");
 });
 
 navInfo.addEventListener("click", () => {
-  hamburger.classList.toggle('active')
+  hamburger.classList.toggle("active");
   // nav.classList.toggle('active')
-  navInfo.classList.toggle('active')
+  navInfo.classList.toggle("active");
 });
 
+const SkillInfo = document.querySelector("section.skills div.skillInfo");
+const info = document.querySelector("section.skills div.skillInfo div.card");
+const skillsButtons = document.querySelectorAll("section.skills button img");
 
-const SkillInfo = document.querySelector('section.skills div.skillInfo')
-const info = document.querySelector('section.skills div.skillInfo div.card')
-const skillsButtons = document.querySelectorAll('section.skills button img')
+console.log(skillsButtons);
 
-console.log(skillsButtons)
-
-skillsButtons.forEach(button => {
-  button.addEventListener('click', ()=>{
-    SkillInfo.classList.toggle('active')
-    info.classList.toggle('active')
-    console.log(button.alt)
+skillsButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    SkillInfo.classList.toggle("active");
+    info.classList.toggle("active");
+    console.log(button.alt);
     for (const skill of skills) {
-      if (skill.name === button.alt){
+      if (skill.name === button.alt) {
         info.innerHTML = `<h2>${skill.name}</h2>
-        <p>${skill.description}</p>`
+        <p>${skill.description}</p>`;
       }
     }
-  })
-})
+  });
+});
 
-SkillInfo.addEventListener('click', ()=>{
-  SkillInfo.classList.toggle('active')
-  info.classList.toggle('active')
-})
-
-
-
-
+SkillInfo.addEventListener("click", () => {
+  SkillInfo.classList.toggle("active");
+  info.classList.toggle("active");
+});
 
 const tomHead = document.querySelector("section.hero img");
 const tomHeadFooter = document.querySelector("section.touch > img");
@@ -101,7 +108,6 @@ function linesAnitmation(lines) {
 
 linesAnitmation(lines);
 
-
 const bubbles = document.querySelectorAll("section.skills button");
 
 setInterval(function () {
@@ -115,7 +121,6 @@ setInterval(function () {
     bubble.style.transform = `translate(${x}%, ${y}%)`;
   });
 }, 3000);
-
 
 /* =========SCROLL REVEAL========= */
 
