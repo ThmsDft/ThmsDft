@@ -19,7 +19,7 @@ var typed = new Typed('section.hero h1 span', {
   backSpeed: 90,
   loop: true,
   startDelay: 30,
-  backDelay: 1000,
+  backDelay: 3000,
   smartBackspace: true,
 });
 
