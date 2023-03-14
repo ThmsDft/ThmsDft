@@ -4,14 +4,14 @@ const thms = document.querySelector("header nav ul li:first-child");
 
 var isDarkTheme = false;
 
-thms.addEventListener("click", () => {
-  console.log(isDarkTheme);
-  const bgColor = isDarkTheme ? "white" : "#001d16";
-  const textColor = isDarkTheme ? "#001d16" : "white";
-  document.documentElement.style.setProperty("--bg-color", bgColor);
-  document.documentElement.style.setProperty("--text-color", textColor);
-  isDarkTheme = isDarkTheme ? false : true;
-});
+// thms.addEventListener("click", () => {
+//   console.log(isDarkTheme);
+//   const bgColor = isDarkTheme ? "white" : "#001d16";
+//   const textColor = isDarkTheme ? "#001d16" : "white";
+//   document.documentElement.style.setProperty("--bg-color", bgColor);
+//   document.documentElement.style.setProperty("--text-color", textColor);
+//   isDarkTheme = isDarkTheme ? false : true;
+// });
 
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector("nav");
