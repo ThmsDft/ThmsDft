@@ -1,4 +1,15 @@
-import skills from "./skills.json" assert { type: "json" };
+const loadData = async () => {
+  try {
+    const url = "skills.json";
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const skills = loadData();
 
 const thms = document.querySelector("header nav ul li:first-child");
 
@@ -30,19 +41,19 @@ const SkillInfo = document.querySelector("section.skills div.skillInfo");
 const info = document.querySelector("section.skills div.skillInfo div.card");
 const skillsButtons = document.querySelectorAll("section.skills button img");
 
-console.log(skillsButtons);
-
 skillsButtons.forEach((button) => {
   button.addEventListener("click", () => {
     SkillInfo.classList.toggle("active");
     info.classList.toggle("active");
     console.log(button.alt);
-    for (const skill of skills) {
-      if (skill.name === button.alt) {
-        info.innerHTML = `<h2>${skill.name}</h2>
-        <p>${skill.description}</p>`;
+    skills.then((skills) => {
+      for (const skill of skills) {
+        if (skill.name === button.alt) {
+          info.innerHTML = `<h2>${skill.name}</h2>
+          <p>${skill.description}</p>`;
+        }
       }
-    }
+    });
   });
 });
 
